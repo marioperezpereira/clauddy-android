@@ -1,5 +1,7 @@
 # Clauddy for Android (prototype)
 
+An unofficial Android port of Clauddy, the desktop pet from Renato Augusto's [claude-usage-monitor](https://github.com/renatoaug/claude-usage-monitor). The pet, its moods, the bubble and the alert rules all come from there; this repo adds the phone side: a home-screen widget, the logins and the background readings. It isn't affiliated with the original project.
+
 A home-screen widget with the Clauddy pet and its glance: for Claude and Codex, the session % and the weekly % beside it, read from the account every 15 minutes, with notifications at 90%, at the limit and when a hot session resets.
 
 It logs in like the desktop Clauddy (OAuth with PKCE, the same public client as Claude Code): tap **Connect**, log in, copy the code, paste it back. A token from `claude setup-token` works too.
@@ -10,7 +12,7 @@ The phone sees only each account's limits, not the computer's local logs, so "at
 
 Both logins use the public clients of Claude Code and the Codex CLI. Tokens are kept in the app's private preferences (not encrypted) and excluded from backups and device transfers.
 
-Pet art from [claude-usage-monitor](https://github.com/renatoaug/claude-usage-monitor) (MIT).
+Pet art and design from [claude-usage-monitor](https://github.com/renatoaug/claude-usage-monitor) by Renato Augusto, used under its MIT license (see [LICENSE](LICENSE)).
 
 ## Build
 

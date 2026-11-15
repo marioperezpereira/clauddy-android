@@ -2,6 +2,12 @@
 
 An unofficial Android port of Clauddy, the desktop pet from Renato Augusto's [claude-usage-monitor](https://github.com/renatoaug/claude-usage-monitor). The pet, its moods, the bubble and the alert rules all come from there; this repo adds the phone side: a home-screen widget, the logins and the background readings. It isn't affiliated with the original project.
 
+<p align="center"><img src="docs/home.png" width="320" alt="The app: the pet at work, Claude's session and weekly %, Codex's weekly %, and both accounts connected"></p>
+
+![The widget in Clauddy's colours, in the system's two tones, and stacked in a square size with the pet at its desk](docs/widget.png)
+
+<sub>Rendered from the app's own drawing code by the test suite (`HomeShotTest`, `PetArtTest`), with sample readings.</sub>
+
 A home-screen widget with the Clauddy pet and its glance: for Claude and Codex, the session % and the weekly % beside it, read from the account every 15 minutes, with notifications at 90%, at the limit and when a hot session resets.
 
 It logs in like the desktop Clauddy (OAuth with PKCE, the same public client as Claude Code): tap **Connect**, log in, copy the code, paste it back. A token from `claude setup-token` works too.

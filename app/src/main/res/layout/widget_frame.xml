@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- one frame of the pet, as large as its place allows and pinned under the bubble's tail: fitStart keeps it at the top when the width is what limits it -->
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:adjustViewBounds="true"
+    android:scaleType="fitStart" />

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Clauddy</string>
+    <string name="widget_description">Your Claude and Codex limits, said by the pet</string>
+</resources>

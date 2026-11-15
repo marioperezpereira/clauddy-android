@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- the bubble, drawn as wide as the widget; a tap reads again -->
+    <ImageView
+        android:id="@+id/pet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:contentDescription="Refresh" />
+
+    <!-- the pet in the rest, its frames flipped in a loop; a tap opens the app -->
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:autoStart="true"
+        android:flipInterval="150"
+        android:contentDescription="Open Clauddy" />
+</LinearLayout>
